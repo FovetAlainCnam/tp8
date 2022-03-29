@@ -4,8 +4,6 @@ public abstract class User
 
     private String id;
     private String name;
-    protected String message;
-
     public User(IChatRoom room, String id, String name){
         this.mediator = room;
         this.name = name;
@@ -25,9 +23,5 @@ public abstract class User
 
     public String getName() {
         return name;
-    }
-
-    public String getMessage() {
-        return message;
     }
 }

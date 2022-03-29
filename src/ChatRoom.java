@@ -16,8 +16,4 @@ public class ChatRoom implements IChatRoom {
     public void addUser(User user) {
         this.usersMap.put(user.getId(), user);
     }
-
-    public int getSize() {
-        return this.usersMap.size();
-    }
 }
